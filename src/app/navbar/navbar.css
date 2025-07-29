@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  padding: 1rem 2rem;
+  background-color: #111827;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    gap: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #C9D1D9;
+
+    &.router-link-active {
+      border-bottom: 2px solid #3b82f6;
+      color: #3b82f6;
+    }
+
+    &:hover {
+      color: #60a5fa;
+    }
+  }
+
+}
+
+.hamburger {
+  cursor: pointer;
+  font-size: 2rem;
+  display: none;
+}
+
+
+@media(max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar ul.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  nav.navbar ul.active {
+    display: flex;
+  }
+}

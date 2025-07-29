@@ -1,0 +1,14 @@
+<nav class="navbar">
+  <div>
+    <a routerLink="/">NEDU</a>
+  </div>
+  <div class="hamburger" (click)="toggleMenu()">
+    &#9776; <!-- Unicode for ☰ -->
+  </div>
+  <ul class="nav-links" [class.active]="menuOpen">
+    <li><a [routerLink]="['/']" routerLinkActive="router-link-active">Home</a></li>
+    <li><a [routerLink]="['/about']" routerLinkActive="router-link-active">About</a></li>
+    <li><a [routerLink]="['/projects']" routerLinkActive="router-link-active">Projects</a></li>
+    <li><a [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</a></li>
+  </ul>
+</nav>

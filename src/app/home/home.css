@@ -1,0 +1,73 @@
+#container{
+    width: 100%;
+    background-color: #0D1117;
+    color: #8B949E;
+}
+
+#content{
+    margin: 0 auto;
+    width: 80%;
+    padding: 0 10px 0 10px;
+    /* background-color: #b49e79; */
+    min-height: 800px;
+}
+
+#bannerLeft{
+    max-width: 40%;
+}
+
+#bannerRight{
+    max-width: 40%;
+}
+
+#personalIntro{
+    font-size: 3rem;
+}
+
+h1, h2, h3, h4{
+    color: #C9D1D9;
+}
+
+#bannerRight a{
+    color: #C9D1D9;
+    border-bottom: 2px solid #C9D1D9;
+    text-decoration: none;
+    
+}
+
+#bannerRight h2{
+    margin-top: 50px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flexCenter{
+    align-items: center;
+}
+
+
+.alignRight{
+    margin-left: auto;
+}
+
+.flexColumn{
+    flex-direction: column;
+}
+
+.social-icons a:first-of-type{
+    margin-left: 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  color: #8B949E; /* or any color you like */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0077b5; /* e.g., LinkedIn blue on hover */
+}
