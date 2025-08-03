@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #container{
     width: 100%;
     background-color: #0D1117;
@@ -9,6 +15,10 @@
     width: 80%;
     padding: 0 10px 0 10px;
     /* background-color: #b49e79; */
+    min-height: 800px;
+}
+
+#banner{
     min-height: 800px;
 }
 
@@ -26,6 +36,7 @@
 
 h1, h2, h3, h4{
     color: #C9D1D9;
+    margin-bottom: 0.6em;
 }
 
 #bannerRight a{
@@ -56,18 +67,42 @@ h1, h2, h3, h4{
     flex-direction: column;
 }
 
-.social-icons a:first-of-type{
+#bannerLeft div#introBorder{
+    border-bottom: rgba(235,245,235,.1) solid 2px;
+    /* margin-bottom: 2rem; */
+}
+
+#expYears{
+    max-width: 40%;
+}
+
+#expYears p:first-of-type{
+    font-size: 4rem;
+    margin-top: 0;
+    color: white;
+}
+
+#expYears p:nth-last-of-type(1){
+    margin-left: 10px;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #eee;
+}
+
+/* .social-icons a:first-of-type{
     margin-left: 0;
 }
 
 .social-icons a {
   margin: 0 10px;
   font-size: 1.2rem;
-  color: #8B949E; /* or any color you like */
+  color: #8B949E;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #0077b5; /* e.g., LinkedIn blue on hover */
-}
+  color: #0077b5;
+} */
+
+/* Canvas CSS  */
